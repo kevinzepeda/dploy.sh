@@ -1,0 +1,19 @@
+{
+  "name": "dploy.sh: Automatic CI/CD with a single command",
+  "short_name": "dploy.sh",
+  "icons": [
+    {
+      "src": "images/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "images/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#002b36",
+  "background_color": "#002b36",
+  "display": "standalone"
+}
