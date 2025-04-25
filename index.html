@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>dploy</title>
+
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, maximum-scale=5.0"
+        />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta
+            name="description"
+            content="dploy is an AI-powered CI/CD solution that automatically generates optimized deployment configurations across multiple platforms. Save time, eliminate complexity, and deploy with a single command—no DevOps expertise required. Perfect for teams using AI-generated code."
+        />
+        <meta
+            name="keywords"
+            content="CI/CD automation, continuous integration, continuous deployment, AI-powered DevOps, deployment automation, GitHub Actions, GitLab CI, Jenkins, CircleCI, AI code deployment, DevOps tools, CI/CD pipeline, software deployment, development workflow automation, dploy, intelligent deployment, AI coding assistants, automated configuration, DevOps simplification, codebase analysis, one command deployment"
+        />
+        <meta name="author" content="Kevin Zepeda" />
+
+        <meta http-equiv="Cache-Control" content="max-age=1209600" />
+
+        <meta property="og:title" content="dploy.sh" />
+        <meta
+            property="og:description"
+            content="dploy is an AI-powered CI/CD solution that automatically generates optimized deployment configurations across multiple platforms. Save time, eliminate complexity, and deploy with a single command—no DevOps expertise required. Perfect for teams using AI-generated code."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://dploy.sh" />
+        <meta property="og:image" content="https://dploy.sh/og.jpg" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Dploy.sh" />
+        <meta
+            name="twitter:description"
+            content="dploy is an AI-powered CI/CD solution that automatically generates optimized deployment configurations"
+        />
+        <meta name="twitter:image" content="https://dploy.sh/og.png" />
+
+        <meta name="theme-color" content="#002b36" />
+        <link
+            rel="preconnect"
+            href="https://fonts.googleapis.com"
+            crossorigin
+        />
+        <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+
+        <link rel="manifest" href="/manifest.json" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta
+            name="apple-mobile-web-app-status-bar-style"
+            content="black-translucent"
+        />
+        <meta name="apple-mobile-web-app-title" content="Terminal" />
+
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="/favicon-16x16.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="/apple-touch-icon.png"
+        />
+        <style>
+            body {
+                background-color: #002b36;
+                color: #839496;
+                font-family: monospace;
+                margin: 0;
+                padding: 20px;
+                line-height: 1.4;
+                font-size: 22px;
+            }
+            .container {
+                max-width: 800px;
+                margin: 0 auto;
+            }
+            .prompt {
+                margin-bottom: 10px;
+                font-weight: bold;
+            }
+            .prompt::before {
+                content: "ghost@55server:~$ ";
+                color: #93a1a1;
+            }
+            .output {
+                margin-bottom: 20px;
+            }
+            .files {
+                margin-left: 20px;
+            }
+            .file {
+                display: flex;
+                margin-bottom: 5px;
+            }
+            .file-permissions {
+                margin-right: 15px;
+                color: #2aa198;
+            }
+            .file-owner {
+                width: auto;
+                margin-right: 15px;
+                color: #b58900;
+            }
+            .file-group {
+                width: auto;
+                margin-right: 15px;
+                color: #b58900;
+            }
+            .file-size {
+                width: 60px;
+                margin-right: 15px;
+                text-align: right;
+                color: #d33682;
+            }
+            .file-date {
+                width: auto;
+                margin-right: 15px;
+                color: #2aa198;
+            }
+            .file-name {
+                color: #839496;
+            }
+            .file-name a {
+                color: #839496;
+                text-decoration: none;
+            }
+            .file-name a:hover {
+                text-decoration: underline;
+            }
+            .cursor {
+                display: inline-block;
+                width: 10px;
+                height: 18px;
+                background-color: #839496;
+                animation: blink 1s infinite;
+            }
+            .directory {
+                color: #268bd2;
+            }
+            @keyframes blink {
+                0%,
+                49% {
+                    opacity: 1;
+                }
+                50%,
+                100% {
+                    opacity: 0;
+                }
+            }
+            .message {
+                margin-bottom: 20px;
+                color: #dc322f;
+                border-left: 3px solid #dc322f;
+                padding-left: 10px;
+            }
+            @media screen and (max-width: 768px) {
+                .file-permissions {
+                    display: none;
+                }
+
+                .file-owner {
+                    display: none;
+                }
+
+                .file-group {
+                    display: none;
+                }
+
+                .file-size {
+                    display: none;
+                }
+
+                .file-date {
+                    margin-right: 10px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="prompt">dploy</div>
+            <div class="output">
+                <div class="message">
+                    Error: The command cannot be executed as it is not yet
+                    available. Is under construction.
+                </div>
+                <div class="prompt">ls -al</div>
+                <div class="files">
+                    <div class="file">
+                        <span class="file-permissions">drwxr-xr-x</span>
+                        <span class="file-owner">ghost</span>
+                        <span class="file-group">staff</span>
+                        <span class="file-size">4096</span>
+                        <span class="file-date">Apr 24 10:30</span>
+                        <span class="file-name"
+                            ><a href="#" class="directory">Project/</a></span
+                        >
+                    </div>
+                    <div class="file">
+                        <span class="file-permissions">drwxr-xr-x</span>
+                        <span class="file-owner">ghost</span>
+                        <span class="file-group">staff</span>
+                        <span class="file-size">3245</span>
+                        <span class="file-date">Apr 24 10:30</span>
+                        <span class="file-name"
+                            ><a href="#" class="directory">Blog/</a></span
+                        >
+                    </div>
+                    <div class="file">
+                        <span class="file-permissions">drwxr-xr-x</span>
+                        <span class="file-owner">ghost</span>
+                        <span class="file-group">staff</span>
+                        <span class="file-size">4096</span>
+                        <span class="file-date">Apr 23 15:45</span>
+                        <span class="file-name"
+                            ><a href="#" class="directory">Docs/</a></span
+                        >
+                    </div>
+                    <div class="file">
+                        <span class="file-permissions">-rw-r--r--</span>
+                        <span class="file-owner">ghost</span>
+                        <span class="file-group">staff</span>
+                        <span class="file-size">2584</span>
+                        <span class="file-date">Apr 24 09:12</span>
+                        <span class="file-name"
+                            ><a href="#">first_part.md</a></span
+                        >
+                    </div>
+                    <div class="file">
+                        <span class="file-permissions">-rw-r--r--</span>
+                        <span class="file-owner">ghost</span>
+                        <span class="file-group">staff</span>
+                        <span class="file-size">1892</span>
+                        <span class="file-date">Apr 22 18:30</span>
+                        <span class="file-name"
+                            ><a href="#">secod_part.md</a></span
+                        >
+                    </div>
+                    <div class="file">
+                        <span class="file-permissions">-rw-r--r--</span>
+                        <span class="file-owner">ghost</span>
+                        <span class="file-group">staff</span>
+                        <span class="file-size">5231</span>
+                        <span class="file-date">Apr 20 14:05</span>
+                        <span class="file-name"
+                            ><a href="#">CONTRIBUTE.md</a></span
+                        >
+                    </div>
+                    <div class="file">
+                        <span class="file-permissions">-rwxr-xr-x</span>
+                        <span class="file-owner">ghost</span>
+                        <span class="file-group">staff</span>
+                        <span class="file-size">1245</span>
+                        <span class="file-date">Apr 19 11:20</span>
+                        <span class="file-name"><a href="#">README.md</a></span>
+                    </div>
+                </div>
+            </div>
+            <div class="prompt"><span class="cursor"></span></div>
+        </div>
+    </body>
+</html>
