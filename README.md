@@ -83,7 +83,7 @@ dploy                       # Execute an agent to analize de context and run the
 We're actively seeking beta testers and early adopters! If you're interested in simplifying your CI/CD workflow:
 
 1. Star this repository to stay updated
-2. Sign up for the beta program at [dploy.sh](https://dploy.sh) (coming soon)
+2. Sign up for the beta program at [dploy.sh](https://dploy.sh)
 3. Join our Discord community for discussions and early access
 
 ## Roadmap
